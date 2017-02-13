@@ -25,7 +25,7 @@ def is_palindrome(n):
 def palindrome_efficient():
     for product in range(998001, 0, -1):
         if str(product) == str(product)[::-1]: #checking if string is palindrome, no need to use helper function
-            for mult in range(100, 1000):
+            for mult in range(1000, 100, -1):
                 if product / mult == int(product / mult) and len(str(int(product / mult))) == 3:
                     return product
 
